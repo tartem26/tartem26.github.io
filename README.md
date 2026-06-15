@@ -10,9 +10,7 @@
 
 **Course Repository:** [https://github.com/tartem26/waph-tikhonam.git](https://github.com/tartem26/waph-tikhonam.git)
 
-**Individual Project 1 Folder:** [https://github.com/tartem26/waph-tikhonam/tree/main/individual-projects/individual-project1](https://github.com/tartem26/waph-tikhonam/tree/main/individual-projects/individual-project1)
-
-**GitHub Pages Repository:** [https://github.com/tartem26/tartem26.github.io](https://github.com/tartem26/tartem26.github.io)
+**Individual Project 1 Folder:** [https://github.com/tartem26/tartem26.github.io](https://github.com/tartem26/tartem26.github.io)
 
 **Deployed Website:** [https://tartem26.github.io/](https://tartem26.github.io/)
 
