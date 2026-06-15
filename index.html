@@ -1,11 +1,397 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Artem Tikhonov - Professional Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Artem Tikhonov professional profile website for WAPH Individual Project 1." />
+  <title>Artem Tikhonov | AI/ML Engineer-Researcher</title>
+
+  <!-- Open-source CSS framework: Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-  <h1>Artem Tikhonov</h1>
-  <p>Welcome to my professional profile website for WAPH Individual Project 1.</p>
-  <p><a href="waph.html">Web Application Programming and Hacking Course Page</a></p>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Artem Tikhonov</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interactive">Interactive</a></li>
+          <li class="nav-item"><a class="nav-link" href="waph.html">WAPH</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light">Toggle Theme</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="eyebrow">Professional Profile Website</p>
+          <h1>Artem Tikhonov</h1>
+          <h2>AI/ML Engineer-Researcher</h2>
+          <p class="hero-location">Cincinnati, OH, USA</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#projects">View Projects</a>
+            <a class="btn btn-outline-light btn-lg" href="waph.html">WAPH Course Page</a>
+          </div>
+
+          <div class="contact-strip">
+            <a href="mailto:tikhonam@mail.uc.edu">tikhonam@mail.uc.edu</a>
+            <span>+1 (206) 489-8250</span>
+            <a href="https://www.linkedin.com/in/tartem26/" target="_blank" rel="noopener">linkedin.com/in/tartem26</a>
+            <a href="https://github.com/tartem26" target="_blank" rel="noopener">github.com/tartem26</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center">
+          <div class="headshot-card">
+            <img src="assets/img/headshot.jpg" alt="Artem Tikhonov headshot" class="headshot-img">
+            <p class="small mt-3 mb-0">AI/ML • Computer Vision • Knowledge Graphs • IoT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="profile" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="content-card">
+          <p class="skills-text">
+            Python, Data Processing, Data Analysis, LLM, scikit-learn, PyTorch, C, C++, C#, Java, JavaScript, ReactJS, Firebase, MySQL, 
+            AWS (IoT Core, Lambda, S3), Knowledge Graphs, Computer Vision, IoT, Embedded Systems, PCB, Leadership, Teamwork.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>Doctoral Researcher, Dr. Novak's Lab <span>University of Cincinnati — Cincinnati, OH (09/2025 – Present)</span></h3>
+            <ul>
+              <li>Researching and building an interpretable, context-aware video reasoning end-to-end pipeline by implementing action graphs that fuse GNN, 3D-CNN, ViT with MRF/CRF inference to produce event descriptive graphs.</li>
+              <li>Addressing static-scene bias in action recognition by using tractable Markov/Conditional Random Fields reasoning to stabilize performance under background shifts.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Graduate Teaching Assistant, Dr. Rabiee <span>University of Cincinnati — Cincinnati, OH (08/2025 – Present)</span></h3>
+            <ul>
+              <li>Administered and graded promptly quizzes/exams for 50 students in the Circuit Analysis I class.</li>
+              <li>Guided students with lab practicals, homework, and problem-solving.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Solutions Architect, Omni Astrobiotics Inc. <span>Stanford University — Stanford, CA (04/2024 – 08/2025)</span></h3>
+            <ul>
+              <li>Delivered a Python-based live motion-capture prototype for AR glasses by using OpenCV and inverse kinematics to compute joint angles, range of motion, and velocity.</li>
+              <li>Improved on-device latency by profiling camera I/O, aligning sensor frames, and applying Kalman smoothing, while handling posture detection, skeleton reconstruction, and viewpoint normalization.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Research Assistant, MLKR Lab <span>University of California, Davis — Davis, CA (10/2024 – 05/2025)</span></h3>
+            <ul>
+              <li>Advanced LLM-based cyberattack detection for IoT devices by training/tuning on CVE/CWE/CPE datasets with a LinkGPT staged freeze–unfreeze technique.</li>
+              <li>Build the knowledge graph to suggest the best mitigation strategies and represent wide range of attacks for cybersecurity class use cases at UC Davis.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Research Assistant, Watson Lab <span>University of Virginia — Charlottesville, VA (04/2024 – 05/2025)</span></h3>
+            <ul>
+              <li>Built a low-cost vibrotactile navigation belt with C/C++ on Seeed XIAO ESP32-C3 with a finite-state machine for directional cues and Bluetooth options for scubadivers and blind people.</li>
+              <li>Developed the initial design of a flexible PCB for fabrication on Voltera NOVA.</li>
+              <li>Designed and tested haptic patterns by characterizing tactor frequency, standardized wiring, pin maps, and power budgets.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Project Manager (Mission Research) <span>NASA L'SPACE MCA — Tempe, AZ (05/2024 – 09/2024)</span></h3>
+            <ul>
+              <li>Contributed to the scientific knowledge of NASA's Artemis II mission to the lunar south pole by working on improving the lunar rover's ability to study the ice in the permanently shadowed regions.</li>
+              <li>Led a team of 11 engineers and delivered a comprehensive mission report of NASA's Phase B, the last phase before the final design and fabrication.</li>
+              <li>Was involved in analyzing 13 Moon landing locations for Artemis III and aligning the rover's mass/power budget with proposed instrumentation.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Chief Scientist <span>NASA L'SPACE NPWEE — Tempe, AZ (01/2024 – 05/2024)</span></h3>
+            <ul>
+              <li>Delivered a NASA-structured proposal to the agency to enhance the ISS Astrobee robot's abilities to assess astronauts' health by using ML and computer vision.</li>
+              <li>Led a team of 3 scientists to develop the system's hardware and software architecture.</li>
+              <li>Contributing to a NASA New Technology Report under John Dankanich (NASA Marshall Chief Technologist).</li>
+              <li>Chaired the NPWEE final review panel under John Carr (NASA Marshall Deputy Center Chief Technologist) with 16 judges to select the top team for NASA's $10,000 research investment.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Team Leader (AI for Accessibility) <span>MIT CSAIL & Amazon & Perkins — Boston, MA (01/2024 – 05/2024)</span></h3>
+            <ul>
+              <li>Won a grant from MIT for ML research in an emotion-recognition system and was published in the Boston Globe.</li>
+              <li>Developed the end-to-end Python pipeline to process data and use it with Zoom, Microsoft Teams, and Slack APIs.</li>
+              <li>Led a team of 5 engineers to deliver a multimodal concept and architecture of a solution for blind people.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Physics & Calculus Tutor <span>De Anza College — Cupertino, CA (04/2022 – 06/2023)</span></h3>
+            <ul>
+              <li>Tutored 10+ courses in Calculus I-IV, Discrete Math, and Classical/Modern Physics in individual and group settings.</li>
+              <li>Recognized by the community to co-host the All-Peer Equity Conference to share tutoring practices with faculty.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>Education</h2>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="content-card h-100">
+              <h3>Ph.D. Computer Science and Engineering</h3>
+              <p>University of Cincinnati — 06/2028</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-card h-100">
+              <h3>B.S. Computer Science and Engineering</h3>
+              <p>University of California, Davis — 06/2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>Relevant Course Projects</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="project-card">
+              <h3><a href="https://github.com/tartem26/Surgical-Instrument-Counter" target="_blank" rel="noopener">Capstone Project (Instrument Counter)</a></h3>
+              <p class="project-meta">University of California, Davis — Winter 2025 – Spring 2025</p>
+              <p>Automated surgical instrument counts for a UC Davis Health transplant surgeon by developing a React Native mobile app.</p>
+              <ul>
+                <li>Cut 70% cost with a CV pipeline: preprocessing, rotation augmentation, CLIP filtering, SAM2 zero-shot segmentation.</li>
+                <li>Achieved 95% accuracy and 50% faster counts by training the ViT/LoRA model with YOLO cross-checks.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="project-card">
+              <h3><a href="https://github.com/tartem26/Campus-Indoor-Outdoor-Navigation" target="_blank" rel="noopener">Intro to AI (Campus Navigation)</a></h3>
+              <p class="project-meta">University of California, Davis — Fall 2024</p>
+              <p>Built an indoor–outdoor campus navigation system by fusing floor plans with OpenStreetMap into a multi-layer graph.</p>
+              <ul>
+                <li>Implemented A* with admissible heuristic, dynamic edge costs for real-time pathfinding, and ReactJS/Flask web app.</li>
+                <li>Converted ~4000 floor plans via Canny/Hough/morphology, NMS/IoU, and added Markov-chain traffic for safer routes.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="project-card">
+              <h3><a href="https://github.com/tartem26/Bankruptcy-Risk-Predictor" target="_blank" rel="noopener">Machine Learning (Bankruptcy Risk)</a></h3>
+              <p class="project-meta">University of California, Davis — Fall 2024</p>
+              <p>Built a bankruptcy-risk end-to-end pipeline for 78k+ Nasdaq firms, from preprocessing to model selection and deployment.</p>
+              <ul>
+                <li>Improved generalization using log transform, IQR clipping, z-score, VIF, and SMOTE/SMOTEENN for imbalance.</li>
+                <li>Selected XGBoost over LR/RF via GridSearchCV, shipped Flask REST backend with ReactJS/Material UI.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="project-card">
+              <h3><a href="https://github.com/tartem26/Custom-BBRv2-Congestion-Control" target="_blank" rel="noopener">Computer Networks (Custom BBRv2)</a></h3>
+              <p class="project-meta">University of California, Davis — Fall 2024</p>
+              <p>Coded a BBRv2 sender/receiver with adaptive pacing and window control for the course congestion-control competition.</p>
+              <ul>
+                <li>Implemented Mealy-type FSM BBRv2/Tahoe-Reno hybrid with min-RTT tracking and dynamic pacing/cwnd updates.</li>
+                <li>Finished in the Top-3/250 students, earning an automatic A in a course and final exam waiver.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="project-card">
+              <h3><a href="https://github.com/tartem26/AI-Exercise-Assistant" target="_blank" rel="noopener">Computer Vision (AI Exercise Assistant)</a></h3>
+              <p class="project-meta">University of California, Davis — Spring 2024</p>
+              <p>Engineered an AI assistant for exercise form, using MediaPipe Pose and OpenCV to deliver real-time feedback.</p>
+              <ul>
+                <li>Detected human posture, computed joint anglesthresholds, and overlaid live guidance on the stream with low latency.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>Awards</h2>
+        </div>
+        <div class="content-card">
+          <ul class="clean-list">
+            <li>University of Cincinnati Graduate Scholarship (PhD) — merit-based — Cincinnati, OH (04/2025)</li>
+            <li>HackDisability: AI for Accessibility — Winner, MIT/Perkins/Amazon — Boston, MA (02/2024)</li>
+            <li>Wolfram Award, HackPrinceton — Princeton University — Princeton, NJ (11/2023)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>Community Activities</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="content-card h-100">
+              <h3>Diversity & Access — NASA Armstrong — Edwards AFB, CA (11/2024)</h3>
+              <ul>
+                <li>Was invited to NASA Armstrong (Edwards AFB) based on scientific achievements to learn about the ongoing research.</li>
+                <li>After the visit, organized a public reflection to address accessibility, diversity, and community effort in research.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-6">
+            <article class="content-card h-100">
+              <h3>Tutoring Leadership — De Anza College — Cupertino, CA (06/2023 – 08/2023)</h3>
+              <ul>
+                <li>Organized and led a tutoring group of 16 students (~70% of the Calculus IV class); averaged group at an A.</li>
+                <li>Built the study program from scratch and motivated students by scoring the midterm at the top of the class.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="content-card mt-4">
+          <h3>Hobbies</h3>
+          <p>Tennis (13 years competing & coaching), Mountaineering (Mt. Shasta), Astrophotography, Outdoor Activities, Trivia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="interactive" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Individual Project 1 Requirements</p>
+          <h2>Interactive JavaScript, APIs, Cookies, and Tracker</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="interactive-card h-100">
+              <h3>Digital Clock</h3>
+              <p id="digitalClock" class="clock-text">Loading...</p>
+
+              <h3 class="mt-4">Analog Clock</h3>
+              <canvas id="analogClock" width="180" height="180" aria-label="Analog clock"></canvas>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="interactive-card h-100">
+              <h3>Show / Hide Email</h3>
+              <button id="emailToggle" class="btn btn-primary">Show my email</button>
+              <p id="emailArea" class="mt-3"></p>
+
+              <h3 class="mt-4">JavaScript Cookies</h3>
+              <p id="visitMessage" class="visit-box">Checking visit history...</p>
+
+              <h3 class="mt-4">Page Tracker</h3>
+              <p class="small text-muted">This third-party hit counter tracks visits to this GitHub Pages website.</p>
+              <a href="https://hits.seeyoufarm.com" target="_blank" rel="noopener">
+                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftartem26.github.io&amp;count_bg=%230D6EFD&amp;title_bg=%23111827&amp;icon=github.svg&amp;icon_color=%23FFFFFF&amp;title=visits&amp;edge_flat=false" alt="Page visit tracker" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="interactive-card h-100">
+              <h3>JokeAPI</h3>
+              <p class="small text-muted">A new joke is loaded every 1 minute from the Any category.</p>
+              <p id="jokeText" class="api-output">Loading joke...</p>
+              <button id="newJokeButton" class="btn btn-outline-primary btn-sm">Load New Joke</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="interactive-card h-100">
+              <h3>Dog CEO Image API</h3>
+              <p class="small text-muted">This API returns a random dog image.</p>
+              <img id="dogImage" class="api-image" src="" alt="Random dog from Dog CEO API">
+              <div class="mt-3">
+                <button id="newDogButton" class="btn btn-outline-primary btn-sm">Load New Image</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="disclaimer mt-4">
+          <strong>Disclaimer:</strong> The jokes and dog images shown in this section are generated by public third-party services. I do not control the generated content and I am not responsible for it.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="mb-1">© <span id="footerYear"></span> Artem Tikhonov</p>
+      <p class="mb-0"><a href="waph.html">Web Application Programming and Hacking Course Page</a></p>
+    </div>
+  </footer>
+
+  <!-- Required JavaScript libraries -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Second open-source JavaScript library: Day.js -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

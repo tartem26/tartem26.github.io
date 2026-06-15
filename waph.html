@@ -1,11 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>WAPH Course Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WAPH course page for Artem Tikhonov's Individual Project 1." />
+  <title>WAPH Course Page | Artem Tikhonov</title>
+
+  <!-- Open-source CSS framework: Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-  <h1>Web Application Programming and Hacking</h1>
-  <p>This page introduces my WAPH coursework, labs, hackathons, and projects.</p>
-  <p><a href="index.html">Back to homepage</a></p>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Artem Tikhonov</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Professional Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#course">Course</a></li>
+          <li class="nav-item"><a class="nav-link" href="#coursework">Coursework</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project">Individual Project 1</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light">Toggle Theme</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section compact-hero">
+    <div class="container">
+      <p class="eyebrow">Course Page</p>
+      <h1>Web Application Programming and Hacking</h1>
+      <h2>WAPH Course Work and Individual Project 1</h2>
+      <p class="hero-location">Instructor: Dr. Phu Phung</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="index.html">Back to Professional Profile</a>
+        <a class="btn btn-outline-light btn-lg" href="https://github.com/tartem26/waph-tikhonam" target="_blank" rel="noopener">Course Repository</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="course" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2>About This Course</h2>
+        </div>
+
+        <div class="content-card">
+          <p>
+            Web Application Programming and Hacking is a hands-on course focused on web foundations, front-end development,
+            server-side programming, cloud deployment, and web security. The course connects practical web development with
+            security concepts such as input validation, output encoding, Cross-Site Scripting, SQL, cookies, and sessions.
+          </p>
+          <p class="mb-0">
+            This page documents the related hands-on projects, labs, hackathons, and Individual Project 1 work completed for the course.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="coursework" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WAPH</p>
+          <h2>Labs, Hackathons, and Projects</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card h-100">
+              <h3>Lab 0</h3>
+              <p>Development environment setup with Ubuntu, Apache, Git, and GitHub workflow.</p>
+              <a class="btn btn-outline-primary btn-sm" href="https://github.com/tartem26/waph-tikhonam/tree/main/labs/lab0" target="_blank" rel="noopener">View Lab 0</a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card h-100">
+              <h3>Lab 1</h3>
+              <p>Foundations of the Web, HTTP request/response, Wireshark, CGI, PHP, GET, and POST.</p>
+              <a class="btn btn-outline-primary btn-sm" href="https://github.com/tartem26/waph-tikhonam/tree/main/labs/lab1" target="_blank" rel="noopener">View Lab 1</a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card h-100">
+              <h3>Lab 2</h3>
+              <p>Front-end web development with HTML, CSS, JavaScript, Ajax, jQuery, and Web APIs.</p>
+              <a class="btn btn-outline-primary btn-sm" href="https://github.com/tartem26/waph-tikhonam/tree/main/labs/lab2" target="_blank" rel="noopener">View Lab 2</a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card h-100">
+              <h3>Hackathon 1</h3>
+              <p>Cross-site scripting attacks and defenses, including input validation and output encoding.</p>
+              <a class="btn btn-outline-primary btn-sm" href="https://github.com/tartem26/waph-tikhonam/tree/main/hackathons/hackathon1" target="_blank" rel="noopener">View Hackathon 1</a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card h-100">
+              <h3>Individual Project 1</h3>
+              <p>Professional profile website deployed on GitHub Pages with JavaScript, APIs, cookies, and tracking.</p>
+              <a class="btn btn-outline-primary btn-sm" href="https://github.com/tartem26/waph-tikhonam/tree/main/individual-project1" target="_blank" rel="noopener">View Project Folder</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Individual Project 1</p>
+          <h2>Website Features</h2>
+        </div>
+
+        <div class="content-card">
+          <ul class="feature-list">
+            <li>Professional profile homepage with resume content, contact information, skills, experience, education, awards, projects, community activities, and hobbies.</li>
+            <li>Open-source CSS framework through Bootstrap.</li>
+            <li>JavaScript features including digital clock, analog clock, show/hide email, and theme toggle.</li>
+            <li>jQuery and Day.js as open-source JavaScript libraries.</li>
+            <li>JokeAPI integration with a new joke every 1 minute.</li>
+            <li>Dog CEO image API integration with a random dog image.</li>
+            <li>JavaScript cookies to remember the visitor and show the last visit date/time.</li>
+            <li>Third-party page tracker shown on the homepage.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive</p>
+          <h2>Cookie Test</h2>
+        </div>
+        <div class="content-card">
+          <p id="visitMessage" class="visit-box">Checking visit history...</p>
+          <p class="mb-0">This message uses JavaScript cookies to remember the previous visit.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="mb-1">© <span id="footerYear"></span> Artem Tikhonov</p>
+      <p class="mb-0"><a href="index.html">Professional Profile Website</a></p>
+    </div>
+  </footer>
+
+  <!-- Required JavaScript libraries -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Second open-source JavaScript library: Day.js -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
