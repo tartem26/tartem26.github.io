@@ -441,7 +441,7 @@ After finishing the website and checking the deployed pages, I generated the PDF
 The command I used was:
 
 ```bash
-cd ~/waph-tikhonam/individual-project1
+cd ~/tartem26.github.io
 pandoc README.md -o tartem26-waph-individual-project1.pdf
 ```
 
