@@ -40,16 +40,10 @@ The main files and folders used for this individual project are:
 - `assets/js/main.js`
 - `assets/img/headshot.jpg`
 
-The website files are stored in the GitHub Pages repository:
+The website files and the project report are stored in the GitHub Pages repository:
 
 ```text
 https://github.com/tartem26/tartem26.github.io
-```
-
-The project report is stored in the WAPH course repository:
-
-```text
-https://github.com/tartem26/waph-tikhonam/tree/main/individual-projects/individual-project1
 ```
 
 No screenshots are included in this report because the project is deployed and publicly visible online. The deployed website and WAPH course page are linked above.
