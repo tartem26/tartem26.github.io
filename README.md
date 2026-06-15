@@ -433,7 +433,7 @@ The page tracker is visible in the interactive section and counts visits automat
 This report was written in Markdown in the following file:
 
 ```text
-individual-project1/README.md
+https://github.com/tartem26/tartem26.github.io/blob/main/README.md
 ```
 
 After finishing the website and checking the deployed pages, I generated the PDF report using `pandoc`.
